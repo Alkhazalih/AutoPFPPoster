@@ -63,5 +63,5 @@ async def s(ctx):
         await ctx.send("**What? <a:Discordggvry4312:1071475312409448558>**")
 
 
-tecno.run("OTE5OTc2NjE4NDgxNTY5ODAy.GX0qYk.XEBDXu4Cu3AbpwxHShY3TbdSWDNVoO9thBowMc") #tecno.run(TOKEN)
+tecno.run("Yourtoken") #tecno.run(TOKEN)
 keep_alive.keep_alive()
