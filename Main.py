@@ -11,13 +11,13 @@ tostop = 0
 
 intents = discord.Intents.all()
 
-Max = os.environ["Max"]
+# TOKEN = os.environ["Token"] # if you want to create env file
 tecno = commands.Bot(command_prefix=".", intents=intents)
 
 
 @tecno.event
 async def on_connect():
-    await tecno.change_presence(activity=discord.Streaming(name="Verona.?", url="https://www.twitch.tv/vveronaaaa"))
+    await tecno.change_presence(activity=discord.Streaming(name="Developed By xi.5 & sw.3", url="https://www.twitch.tv/help"))
 
 
 def randnum(fname):
@@ -32,12 +32,12 @@ async def on_ready():
     print("")
     print(f"Bot ID: {tecno.user.id}")
     print("")
-    print(f"Made By MAX.#0004")
+    print(f"Developed By xi.5 & sw.3")
     print("")
     print(f"{tecno.user} is now online.!")
 
 
-allowed = ["id owner 1", "id owner 2"]
+allowed = ["1034102778311753899", "798245874110955520"] #Your Id here
 
 
 @tecno.command()
@@ -57,11 +57,11 @@ async def s(ctx):
         tostop = 0
         await ctx.reply("*Started <a:Discordggvry4315:1071475330587557948>*")
         while tostop == 0:
-            await ctx.send(randnum('PFP.txt'))
+            await ctx.send(randnum('scraped.txt'))
             time.sleep(11)
     else:
         await ctx.send("**What? <a:Discordggvry4312:1071475312409448558>**")
 
 
-tecno.run(Max) #create secret called Max
+tecno.run("OTE5OTc2NjE4NDgxNTY5ODAy.GX0qYk.XEBDXu4Cu3AbpwxHShY3TbdSWDNVoO9thBowMc") #tecno.run(TOKEN)
 keep_alive.keep_alive()
